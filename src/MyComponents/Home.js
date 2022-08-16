@@ -1,6 +1,7 @@
 import Todos from '../MyComponents/Todos';
 import AddTodo from '../MyComponents/AddTodo';
 import React, { useState, useEffect } from 'react';
+import Footer from '../MyComponents/Footer';
 
 const Home = () => {
   let initTodo;
@@ -40,10 +41,11 @@ const Home = () => {
     localStorage.setItem('todos', JSON.stringify(todos));
   }, [todos]);
   return (
-    <>
+    <div className="bg-light">
       <AddTodo addTodo={addTodo} />
       <Todos todos={todos} onDelete={onDelete} />
-    </>
+      <Footer/>
+    </div>
   );
 };
 

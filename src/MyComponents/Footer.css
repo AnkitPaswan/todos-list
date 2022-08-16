@@ -1,4 +1,11 @@
-footer{
-    margin-top:10px;
-    /* position: absolute ; */
-}
+
+@media (max-width: 912px) {
+   .footer{
+    margin-top: 50%;
+   }
+  }
+@media (max-width: 500px) {
+   .footer{
+    margin-top: 0rem;
+   }
+  }

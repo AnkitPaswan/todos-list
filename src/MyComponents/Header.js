@@ -3,11 +3,14 @@ import { Link } from 'react-router-dom';
 
 export default function Header(props) {
   return (
-    <nav className='navbar navbar-expand-lg bg-light'>
+    <nav className=' navbar navbar-expand-lg bg-light fixed-top outline-red'>
       <div className='container-fluid'>
-        <Link className='navbar-brand' to='/'>
-          {props.title}
-        </Link>
+        <div className='d-flex '>
+          <img src='logo1.jpg' height='30' width='30' alt='' />
+          <Link className='navbar-brand fw-bold text-dark pt-0' to='/'>
+            {props.title}
+          </Link>
+        </div>
         <button
           className='navbar-toggler'
           type='button'
@@ -26,27 +29,18 @@ export default function Header(props) {
                 Home
               </Link>
             </li>
-            <li className='nav-item'>
-              <Link className='nav-link' to='/about'>
-                About
-              </Link>
-            </li>
           </ul>
-          {props.searchBar ? (
-            <form className='d-flex' role='search'>
-              <input
-                className='form-control me-2'
-                type='search'
-                placeholder='Search'
-                aria-label='Search'
-              />
-              <button className='btn btn-outline-success' type='submit'>
-                Search
-              </button>
-            </form>
-          ) : (
-            ''
-          )}
+          <form className='d-flex'>
+            <input
+              className='form-control me-2'
+              type='search'
+              placeholder='Search'
+              aria-label='Search'
+            />
+            <button className='btn btn-outline-success' type='submit'>
+              Search
+            </button>
+          </form>
         </div>
       </div>
     </nav>

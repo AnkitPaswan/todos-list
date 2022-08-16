@@ -1,0 +1,7 @@
+.column{
+    padding-top:5em;
+}
+
+.gradient-custom{
+    background: linear-gradient(to right, #264772 , #539395)
+}

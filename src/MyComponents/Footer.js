@@ -1,13 +1,14 @@
-import React from 'react'
+import React from 'react';
 import './Footer.css';
 const Footer = () => {
   return (
-    <footer className="bg-dark text-light py-3" >
-      <p className="text-center">
-        copyright &copy; MyTodoList.com 
+    <footer className='footer bg-dark text-light py-2 position-relative'>
+      <p className='text-center'>
+        {/* copyright &copy; MyTodoList.com  */}
+        Made By ❤️ with India.
       </p>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
